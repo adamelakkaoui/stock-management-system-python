@@ -1,5 +1,7 @@
 # Stock Management System – Python
 
+![SOFTWARE ENGINEERING — Stock management with text files and SQLite](assets/portfolio-banner.svg)
+
 Academic console application implementing CRUD operations for clients, products, orders and suppliers with two storage approaches: JSON-formatted text files and SQLite.
 
 ## Verified features
