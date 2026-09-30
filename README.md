@@ -37,3 +37,11 @@ The interface is console-only. Input validation, authentication, concurrent acce
 
 - Adam El Akkaoui
 - Merizak Mehdi
+
+## Academic artefacts
+
+- [French academic report (PDF)](docs/academic-report-fr.pdf). No presentation or video was found. Public examples contain no original contact or inventory records.
+
+## Testing and limitations
+
+On Python 3.11, two temporary-storage tests passed for JSON-text stock reduction and accepted/rejected atomic SQLite orders; byte-compilation passed. Interactive menus, concurrent access and historical database migration were not tested. The portfolio copy makes SQLite order updates atomic.
