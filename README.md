@@ -1,47 +1,62 @@
 # Stock Management System – Python
 
-Academic console application implementing CRUD operations for clients, products, orders, and suppliers with two interchangeable storage approaches: JSON-formatted text files and SQLite.
+Academic console application implementing CRUD operations for clients, products, orders and suppliers with two storage approaches: JSON-formatted text files and SQLite.
 
 ## Verified features
 
-- Object-oriented `Client`, `Produit`, `Commande`, and `Fournisseur` entities.
-- Create, display, update, and delete operations.
-- Product stock checks and stock updates when orders are added.
-- Order-total calculation.
-- Hierarchical interactive console menus.
-- Text-file and relational SQLite variants.
+- Object-oriented `Client`, `Produit`, `Commande` and `Fournisseur` entities.
+- Create, display, update and delete operations.
+- Product-stock checks and stock updates when an order is added.
+- Order-total calculation and hierarchical console menus.
+- Independent JSON-text and relational SQLite variants.
 
-## Privacy and portfolio correction
+## Privacy and portfolio corrections
 
-The submitted text files and SQLite database contained populated contact/order examples and were excluded. This repository starts with empty JSON arrays and generates a local SQLite database on first use. The SQLite script previously launched its interactive menu on import; it now uses a `main()` guard so it can be imported and tested without blocking.
+The submitted text files and SQLite database contained populated contact/order examples and were excluded. The public text backend starts from four empty JSON arrays. The SQLite database is generated locally and ignored by Git.
 
-The portfolio copy also verifies every requested product before inserting an SQLite order and rolls back database errors, avoiding empty or partially written orders.
+The SQLite script now has a `main()` guard, verifies all requested products before inserting an order, and rolls back database errors to avoid empty or partially written orders.
 
 ## Requirements and use
 
-Python 3.10+; all dependencies are in the standard library.
+Python 3.10+ is sufficient; both implementations use only the standard library. Run each application **from its own backend directory**, because both scripts resolve their writable paths from the current working directory.
+
+Text backend:
 
 ```bash
-python text_storage/stock_text.py
-python sqlite_storage/stock_sqlite.py
+cd text_storage
+python stock_text.py
+```
+
+This reads and writes `text_storage/data/{clients,produits,commandes,fournisseurs}.txt`.
+
+SQLite backend, from the repository root in a separate terminal:
+
+```bash
+cd sqlite_storage
+python stock_sqlite.py
+```
+
+This creates `sqlite_storage/gestion.db`, which is excluded by `.gitignore`.
+
+Run the automated checks from the repository root:
+
+```bash
 python -m unittest discover -s tests -v
 ```
 
-Run each version from its own directory so relative data paths remain local to that backend.
+## Academic artefacts
 
-## Limitations
+- [French academic report (PDF)](docs/academic-report-fr.pdf).
 
-The interface is console-only. Input validation, authentication, concurrent access, and stock reconciliation when existing orders are edited or deleted remain limited. SQLite is intended for local use, while the text backend is JSON stored in `.txt` files rather than an unstructured line format.
+No project presentation or video was found.
+
+## Testing and limitations
+
+Both menu applications were launched from a clean temporary copy and exited normally. The text variant kept its four files under `text_storage/data/`; the SQLite variant created only `sqlite_storage/gestion.db`. No generated database or test data was copied back to the repository. On Python 3.11, both existing temporary-storage tests passed, covering JSON-text stock reduction and accepted/rejected atomic SQLite orders.
+
+The interface remains console-only. Input validation, authentication, concurrent access, migration of historical databases and stock reconciliation after editing or deleting existing orders were not tested.
 
 ## Authors
 
 - Adam El Akkaoui
 - Merizak Mehdi
-
-## Academic artefacts
-
-- [French academic report (PDF)](docs/academic-report-fr.pdf). No presentation or video was found. Public examples contain no original contact or inventory records.
-
-## Testing and limitations
-
-On Python 3.11, two temporary-storage tests passed for JSON-text stock reduction and accepted/rejected atomic SQLite orders; byte-compilation passed. Interactive menus, concurrent access and historical database migration were not tested. The portfolio copy makes SQLite order updates atomic.
