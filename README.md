@@ -4,7 +4,7 @@
 
 Academic console application implementing CRUD operations for clients, products, orders and suppliers with two storage approaches: JSON-formatted text files and SQLite.
 
-## Verified features
+## Features
 
 - Object-oriented `Client`, `Produit`, `Commande` and `Fournisseur` entities.
 - Create, display, update and delete operations.
@@ -12,11 +12,14 @@ Academic console application implementing CRUD operations for clients, products,
 - Order-total calculation and hierarchical console menus.
 - Independent JSON-text and relational SQLite variants.
 
-## Privacy and portfolio corrections
+## Storage design
 
-The submitted text files and SQLite database contained populated contact/order examples and were excluded. The public text backend starts from four empty JSON arrays. The SQLite database is generated locally and ignored by Git.
+The application is implemented in two versions that expose the same management operations:
 
-The SQLite script now has a `main()` guard, verifies all requested products before inserting an order, and rolls back database errors to avoid empty or partially written orders.
+- **Text-file version:** persistent storage using text files for clients, products, orders and suppliers.
+- **SQLite3 version:** relational storage using a local SQLite database.
+
+Both versions manage the same four entities and provide Create, Read, Update and Delete operations through a console menu.
 
 ## Requirements and use
 
@@ -52,11 +55,13 @@ python -m unittest discover -s tests -v
 
 No project presentation or video was found.
 
-## Testing and limitations
+## Tests, limitations and perspectives
 
-Both menu applications were launched from a clean temporary copy and exited normally. The text variant kept its four files under `text_storage/data/`; the SQLite variant created only `sqlite_storage/gestion.db`. No generated database or test data was copied back to the repository. On Python 3.11, both existing temporary-storage tests passed, covering JSON-text stock reduction and accepted/rejected atomic SQLite orders.
+The report documents unit tests for the `Client`, `Produit`, `Commande` and `Fournisseur` classes, data-management tests for addition, display, modification and deletion, stock tests to verify quantity updates and prevent orders beyond available stock, and persistence tests for both SQLite3 and text-file storage.
 
-The interface remains console-only. Input validation, authentication, concurrent access, migration of historical databases and stock reconciliation after editing or deleting existing orders were not tested.
+The limitations identified in the report are the rudimentary nature of text-file storage, the console-only interface, limited error handling, the absence of user access rights, and SQLite3's limitations for large-scale or concurrent multi-user use.
+
+The proposed improvements include a graphical interface, authentication and roles, stronger exception handling, migration toward MySQL or PostgreSQL for larger deployments, and additional functions such as exports, stock alerts and sales/order statistics.
 
 ## Authors
 
