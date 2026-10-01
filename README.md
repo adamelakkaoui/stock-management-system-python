@@ -43,17 +43,9 @@ python stock_sqlite.py
 
 This creates `sqlite_storage/gestion.db`, which is excluded by `.gitignore`.
 
-Run the automated checks from the repository root:
-
-```bash
-python -m unittest discover -s tests -v
-```
-
 ## Academic artefacts
 
 - [French academic report (PDF)](docs/academic-report-fr.pdf).
-
-No project presentation or video was found.
 
 ## Tests, limitations and perspectives
 
