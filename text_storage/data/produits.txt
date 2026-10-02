@@ -1,1 +1,72 @@
-[]
+[
+    {
+        "id": 1,
+        "nom": "TV",
+        "prix": 5000.0,
+        "quantite": 24,
+        "fournisseur_id": 1
+    },
+    {
+        "id": 2,
+        "nom": "Recepteurs ",
+        "prix": 400.0,
+        "quantite": 27,
+        "fournisseur_id": 1
+    },
+    {
+        "id": 3,
+        "nom": "Smartphones",
+        "prix": 3500.0,
+        "quantite": 15,
+        "fournisseur_id": 2
+    },
+    {
+        "id": 4,
+        "nom": "PC",
+        "prix": 7500.0,
+        "quantite": 18,
+        "fournisseur_id": 2
+    },
+    {
+        "id": 5,
+        "nom": "Playstation ",
+        "prix": 8000.0,
+        "quantite": 8,
+        "fournisseur_id": 2
+    },
+    {
+        "id": 6,
+        "nom": "appareil photo",
+        "prix": 1000.0,
+        "quantite": 12,
+        "fournisseur_id": 2
+    },
+    {
+        "id": 7,
+        "nom": "machines à laver",
+        "prix": 4499.0,
+        "quantite": 17,
+        "fournisseur_id": 3
+    },
+    {
+        "id": 8,
+        "nom": "Réfrigérateur",
+        "prix": 6000.0,
+        "quantite": 16,
+        "fournisseur_id": 3
+    },
+    {
+        "id": 9,
+        "nom": "climatiseur",
+        "prix": 5000.0,
+        "quantite": 45,
+        "fournisseur_id": 4
+    },
+    {
+        "id": 10,
+        "nom": "chauffage",
+        "prix": 1999.0,
+        "quantite": 36,
+        "fournisseur_id": 5
+    }
+]
