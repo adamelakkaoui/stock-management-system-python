@@ -1,1 +1,110 @@
-[]
+[
+    {
+        "id": 1,
+        "id_client": 1,
+        "date": "2025-02-03 14:09:16",
+        "produits": [
+            {"produit_id": 1, "quantite": 1},
+            {"produit_id": 2, "quantite": 1}
+        ]
+    },
+    {
+        "id": 2,
+        "id_client": 2,
+        "date": "2025-02-03 14:09:43",
+        "produits": [
+            {"produit_id": 3, "quantite": 1}
+        ]
+    },
+    {
+        "id": 3,
+        "id_client": 3,
+        "date": "2025-02-03 14:09:54",
+        "produits": [
+            {"produit_id": 4, "quantite": 1}
+        ]
+    },
+    {
+        "id": 4,
+        "id_client": 4,
+        "date": "2025-02-03 14:10:05",
+        "produits": [
+            {"produit_id": 5, "quantite": 1},
+            {"produit_id": 6, "quantite": 1}
+        ]
+    },
+    {
+        "id": 5,
+        "id_client": 5,
+        "date": "2025-02-03 14:11:18",
+        "produits": [
+            {"produit_id": 7, "quantite": 1},
+            {"produit_id": 8, "quantite": 1},
+            {"produit_id": 9, "quantite": 1}
+        ]
+    },
+    {
+        "id": 6,
+        "id_client": 6,
+        "date": "2025-02-03 14:11:49",
+        "produits": [
+            {"produit_id": 1, "quantite": 3}
+        ]
+    },
+    {
+        "id": 7,
+        "id_client": 7,
+        "date": "2025-02-03 14:12:03",
+        "produits": [
+            {"produit_id": 3, "quantite": 2}
+        ]
+    },
+    {
+        "id": 8,
+        "id_client": 8,
+        "date": "2025-02-03 14:12:14",
+        "produits": [
+            {"produit_id": 3, "quantite": 1},
+            {"produit_id": 4, "quantite": 2}
+        ]
+    },
+    {
+        "id": 9,
+        "id_client": 9,
+        "date": "2025-02-03 14:12:32",
+        "produits": [
+            {"produit_id": 10, "quantite": 2},
+            {"produit_id": 9, "quantite": 2}
+        ]
+    },
+    {
+        "id": 10,
+        "id_client": 10,
+        "date": "2025-02-03 14:12:58",
+        "produits": [
+            {"produit_id": 6, "quantite": 1},
+            {"produit_id": 4, "quantite": 1},
+            {"produit_id": 7, "quantite": 1},
+            {"produit_id": 8, "quantite": 1},
+            {"produit_id": 9, "quantite": 1},
+            {"produit_id": 10, "quantite": 1}
+        ]
+    },
+    {
+        "id": 11,
+        "id_client": 11,
+        "date": "2025-02-03 14:14:05",
+        "produits": [
+            {"produit_id": 1, "quantite": 1},
+            {"produit_id": 2, "quantite": 1},
+            {"produit_id": 3, "quantite": 1},
+            {"produit_id": 4, "quantite": 1},
+            {"produit_id": 5, "quantite": 1},
+            {"produit_id": 6, "quantite": 1},
+            {"produit_id": 7, "quantite": 1},
+            {"produit_id": 8, "quantite": 1},
+            {"produit_id": 9, "quantite": 1},
+            {"produit_id": 10, "quantite": 1}
+        ]
+    }
+]
