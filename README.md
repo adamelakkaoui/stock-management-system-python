@@ -39,7 +39,7 @@ cd sqlite_storage
 python stock_sqlite.py
 ```
 
-This creates `sqlite_storage/gestion.db`, which is excluded by `.gitignore`.
+This creates `sqlite_storage/gestion.db`.
 
 ## Academic artefacts
 
