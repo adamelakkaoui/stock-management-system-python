@@ -1,1 +1,32 @@
-[]
+[
+    {
+        "id": 1,
+        "nom": "soufiane multimedia",
+        "email": "soufiane@gmail.com",
+        "telephone": "0514203268"
+    },
+    {
+        "id": 2,
+        "nom": "marouane informatiques",
+        "email": "marouane@gmail.com",
+        "telephone": "0500012356"
+    },
+    {
+        "id": 3,
+        "nom": "karim electromenager",
+        "email": "karim.electro@gmail.com",
+        "telephone": "0587693215"
+    },
+    {
+        "id": 4,
+        "nom": "jamal clima",
+        "email": "clima-jamal@gmail.com",
+        "telephone": "0798900506"
+    },
+    {
+        "id": 5,
+        "nom": "chauffages abdo",
+        "email": "abdo@gmail.com",
+        "telephone": "0608805020"
+    }
+]
