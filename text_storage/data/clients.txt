@@ -1,1 +1,79 @@
-[]
+[
+    {
+        "id": 1,
+        "nom": "adam",
+        "email": "adam@gmail.com",
+        "telephone": "0612325487",
+        "adresse": "ouled oujih 612"
+    },
+    {
+        "id": 2,
+        "nom": "mehdi",
+        "email": "mehid@gmail.com",
+        "telephone": "0689215478",
+        "adresse": "le vallon 15"
+    },
+    {
+        "id": 3,
+        "nom": "saad",
+        "email": "saad@gmail.com",
+        "telephone": "0714253669",
+        "adresse": "maghreb-arabi 71"
+    },
+    {
+        "id": 4,
+        "nom": "reda",
+        "email": "reda@gmail.com",
+        "telephone": "0698163454",
+        "adresse": "Luchador 5"
+    },
+    {
+        "id": 5,
+        "nom": "abderrahim",
+        "email": "chrerto@gmail.com",
+        "telephone": "0623987512",
+        "adresse": "maghreb-arabi 83"
+    },
+    {
+        "id": 6,
+        "nom": "khalid",
+        "email": "khalid@gamil.com",
+        "telephone": "0721326549",
+        "adresse": "birrami 53"
+    },
+    {
+        "id": 7,
+        "nom": "bilal",
+        "email": "bilal@gmail.com",
+        "telephone": "0612398247",
+        "adresse": "ouled oujih 19"
+    },
+    {
+        "id": 8,
+        "nom": "mohammed",
+        "email": "monstis@gmail.com",
+        "telephone": "0698213265",
+        "adresse": "la ville-haute 14"
+    },
+    {
+        "id": 9,
+        "nom": "alaa",
+        "email": "alaa@gmail.com",
+        "telephone": "0679351524",
+        "adresse": "la hay 96"
+    },
+    {
+        "id": 10,
+        "nom": "sami",
+        "email": "sami@gmail.com",
+        "telephone": "0665063201",
+        "adresse": "centre-ville 203"
+    },
+    {
+        "id": 11,
+        "nom": "yassine",
+        "email": "yassine@gmail.com",
+        "telephone": "0601200306",
+        "adresse": "haouzia 40"
+    }
+]
